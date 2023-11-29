@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="300.0" prefWidth="200.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafx.StatisticsController">
+   <children>
+      <AnchorPane layoutY="-2.0" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #f3f3f3;">
+         <children>
+            <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@purelogo.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="74.0" layoutY="16.0" text="统计结果">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <ListView fx:id="stalist" layoutX="31.0" layoutY="58.0" prefHeight="163.0" prefWidth="137.0" />
+   </children>
+</AnchorPane>

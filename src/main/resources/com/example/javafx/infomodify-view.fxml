@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="400.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafx.InfomodifyController">
+   <children>
+      <AnchorPane prefHeight="50.0" prefWidth="400.0" style="-fx-background-color: #f0f0f5;">
+         <children>
+            <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@purelogo.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="161.0" layoutY="9.0" prefHeight="32.0" prefWidth="78.0" text="个人信息修改">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <TextField fx:id="namefield" layoutX="151.0" layoutY="133.0" />
+      <TextField fx:id="gradefield" layoutX="151.0" layoutY="313.0" />
+      <TextField fx:id="schoolfield" layoutX="151.0" layoutY="250.0" />
+      <TextField fx:id="majorfield" layoutX="151.0" layoutY="381.0" />
+      <Label fx:id="idlabel" layoutX="151.0" layoutY="189.0" prefHeight="23.0" prefWidth="161.0" text="0" />
+      <Label layoutX="151.0" layoutY="101.0" prefHeight="23.0" prefWidth="50.0" text="姓名：" />
+      <Label layoutX="151.0" layoutY="166.0" prefHeight="23.0" prefWidth="31.0" text="学号" />
+      <Label fx:id="gradelabel" layoutX="151.0" layoutY="282.0" prefHeight="23.0" prefWidth="50.0" text="年级：" />
+      <Label layoutX="151.0" layoutY="219.0" prefHeight="23.0" prefWidth="50.0" text="学院：" />
+      <Label fx:id="majorlabel" layoutX="151.0" layoutY="349.0" prefHeight="23.0" prefWidth="50.0" text="专业：" />
+      <Button fx:id="confirmbutton" layoutX="41.0" layoutY="250.0" mnemonicParsing="false" onAction="#onconfirmclick" text="确认修改" textFill="#db2525" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="300.0" prefWidth="250.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafx.ConfirmController">
+   <children>
+      <AnchorPane prefHeight="40.0" prefWidth="250.0" style="-fx-background-color: #dddddd;">
+         <children>
+            <Label layoutX="101.0" layoutY="12.0" text="确认提示">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label fx:id="confirmtext" layoutX="76.0" layoutY="111.0" text="确认退出系统吗" textFill="#4917c7">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="yesbutton" layoutX="35.0" layoutY="167.0" mnemonicParsing="false" onAction="#onyesclick" text="是(Yes)" textFill="#0f9a32" />
+      <Button fx:id="nobutton" layoutX="153.0" layoutY="167.0" mnemonicParsing="false" onAction="#onnoclick" text="否(No)" textFill="#eb1414" />
+   </children>
+</AnchorPane>
